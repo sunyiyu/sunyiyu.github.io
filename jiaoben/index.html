@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery简单实用的五角星评分特效</title>
+
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+	.comment {
+		font-size: 40px;
+		color: #999999;
+		margin:0 auto; 
+		width:200px; 
+		height:100px;
+	}
+
+	.comment li {
+		float: left;
+	}
+
+	ul {
+		list-style: none;
+	}
+</style>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+	$(function () {
+    var selected = "★";
+    var dfault = "☆";
+
+    $(".comment li").mouseenter(function () {
+        $(this).text(selected).css('color','#ffb346').prevAll().text(selected).css('color','#ffb346');
+        $(this).nextAll(dfault);
+    });
+    $(".comment li").mouseleave(function () {
+        $(".comment li").text(dfault).css('color','#eaeaea')
+        $("li.current").text(selected).css('color','#ffb346').prevAll().text(selected).css('color','#ffb346');
+    });
+    $(".comment li").click(function () {
+        var $index = $(this).index()
+        $(this).parent().siblings('div').find('.fen').text($index+1);//统计分数
+        $(this).addClass("current").siblings().removeClass("current")//添加class
+    })
+})
+</script>
+
+</head>
+<body>
+<div>
+	<br><br><br>
+	<ul class="comment">
+		<li>☆</li>
+		<li>☆</li>
+		<li>☆</li>
+		<li>☆</li>
+		<li>☆</li>
+	</ul>
+	<div><span class="fen">0</span>分</div>
+</div>
+
+</body>
+</html>
+
