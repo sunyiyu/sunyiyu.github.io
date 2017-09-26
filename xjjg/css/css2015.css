@@ -63,7 +63,7 @@ p{margin:0;padding:0;}
 	
 	
 }
-.tttxt{width:140;height:32px; float:left; margin:0 0 0 26px; display:inline; font-size:20px; line-height:40px; color:#2a7cbe; font-weight:bold; font-family:"黑体";}
+.tttxt{width:140px;height:32px; float:left; margin:0 0 0 26px; display:inline; font-size:20px; line-height:40px; color:#2a7cbe; font-weight:bold; font-family:"黑体";}
 
 .ttmore{width:70px; float:right;margin:14px 10px 0 0 ; font-size:14px;}
 .ttmore a{color:#34508f;}
