@@ -1,0 +1,10 @@
+@charset "utf-8";
+body, p, img, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+body { position: relative; font: 14px/1.5 "Microsoft YaHei", Arial; min-width: 980px; }
+ul, ol { list-style: none; }
+img { border: 0 none; }
+input, select { vertical-align: middle; }
+table { border-collapse: collapse; }
+s, em, i { font-style: normal; text-decoration: none; }
+p{text-indent:2em;}
+.cf:after { clear: both; content: "."; display: block; height:162; overflow: hidden;  }
