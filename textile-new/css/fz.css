@@ -69,6 +69,9 @@
 .public li{
     line-height: 30px;
 }
+.public li a{
+    color: #666666;
+}
 .public li:hover{
     color: #523d99;
 }
