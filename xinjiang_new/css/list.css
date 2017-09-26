@@ -1,0 +1,187 @@
+@charset "utf-8";
+.list_menu{
+    width: 100%;
+    overflow: hidden;
+    height:40px;
+    line-height: 40px;
+    font-size:14px;
+    margin-top: 10px;
+}
+.list_menu ul li{
+    float: left;
+    margin-left:5px;
+}
+.list_menu ul li a{
+    color: #666666;
+}
+.list_l{
+    width: 630px;
+    height: 1000px;
+    float: left;
+    overflow: hidden;
+    color: #666666;
+}
+.list_l ul{
+    margin-top: 20px;
+}
+.list_l .tit{
+    height: 40px;
+    line-height: 40px;
+    border:1px solid #cccccc;
+    background-color: #f0f0f0;
+}
+.list_l .tit p{
+    float: left;
+    margin-right: 10px;
+}
+p.tit_pl{
+    margin-left: 10px;
+}
+.list_l .tit p.p1,.list_l .tit p.p2{
+    float: right;
+}
+.list_l .tit p.p1{
+    margin-right:20px;
+}
+.list_l .tit .p1 span{
+    display: inline-block;
+    padding:0px 20px;
+    height: 20px;
+    line-height: 20px;
+    border:1px solid #cccccc;
+    margin-right: 0;
+    margin-top: 8px;
+}
+.list_l .tit .p1 span:hover{
+    background-color: #fff;
+    cursor:pointer;
+}
+.list_l .tit .p1 span.bd1{
+    border-right:0;
+}
+.list_l .tit .p2 span.color{
+    color:rgb(227,4,58);
+}
+.oli1 {
+    line-height: 30px;
+    clear: both;
+}
+
+.oli1 span {
+    width: 100px;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.a3 {
+    padding-left: 15px;
+    background-image: url(http://www.cottonchina.org/images/jiantou3.gif);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0 11px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+.a3:hover{
+    color: #e3043a;
+}
+.list_r{
+    width: 310px;
+    float: right;
+}
+.list_r .ip {
+    width: 99%;
+    height: 34px;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+}
+.list_r .ip input {
+    float: left;
+    width: 240px;
+    height: 34px;
+    line-height: 34px;
+    background: none;
+    border: none;
+    padding:0 0 0 20px;
+}
+.list_r .ip i {
+    margin: 7px 0 0 7px;
+    float: right;
+    width: 17px;
+    height: 17px;
+    background-position: -21px -75px;
+}
+p.pn{
+    width: 135px;
+    height: 75px;
+    overflow: hidden;
+}
+.jmdc .tj p.pr {
+    width: 112px;
+}
+.fixed{
+    position: fixed;
+    width: 45px;
+    top: 230px;
+    right: 0;
+}
+/*.fixed ul {
+
+}*/
+.fixed ul li{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    position: relative;
+}
+.fixed ul li i{
+    width: 40px;
+    height: 40px;
+}
+.fixed ul li i.i1{
+    background-position: -21px -221px;
+}
+.fixed ul li i.i2{
+    background-position: -82px -221px;
+}
+.fixed ul li i.i3{
+    background-position: -142px -221px;
+}
+.fixed ul li i.i4{
+    background-position: -208px -221px;
+}
+.fixed ul li i.i1:hover{
+    background-position: -21px -274px;
+}
+.fixed ul li i.i2:hover{
+    background-position: -82px -274px;
+}
+.fixed ul li i.i3:hover{
+    background-position: -142px -274px;
+}
+.fixed ul li i.i4:hover{
+    background-position: -208px -274px;
+}
+div.cla11{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left:-160px;
+    display: none;
+    border: 1px solid #cccccc;
+    z-index: 1000;
+}
+div.cla11 img{
+    width: 100%;
+}
+.gb.mart{
+    margin-top:20px;
+}
+.list_r .ip input[value],.bottom_t input[value]{
+    color: #999999;
+}
