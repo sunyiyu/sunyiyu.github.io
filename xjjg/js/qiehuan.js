@@ -25,12 +25,12 @@ function showtime(){
 	var gde = myDate.getDate();
 	var gdy = myDate.getDay();
 	if(GetObj("st")){
-		GetObj("st").innerHTML=fy + "Äê" + gm + "ÔÂ"+gde +"ÈÕ";
+		GetObj("st").innerHTML=fy + "å¹´" + gm + "æœˆ"+gde +"æ—¥";
 	}
 }
 
 function GetRequest() {
-  var url = location.search; //»ñÈ¡urlÖĞ"?"·ûºóµÄ×Ö´®
+  var url = location.search; //è·å–urlä¸­"?"ç¬¦åçš„å­—ä¸²
   var theRequest = new Object();
   if(url.indexOf("?") != -1) {
 		var str = url.substr(1);

@@ -1,4 +1,5 @@
-body{margin:0;padding:0; background:url(../images/bg.jpg) no-repeat fixed; font-size:14px; font-family:"Î¢ÈíÑÅºÚ"; font-family:"Microsoft YaHei"; color:#333333}
+@charset "utf-8";
+body{margin:0;padding:0; background:url(../images/bg.jpg) no-repeat fixed; font-size:14px; font-family:"å¾®è½¯é›…é»‘"; font-family:"Microsoft YaHei"; color:#333333}
 ul{list-style:none; margin:0;padding:0; font-size:14px;}
 li{line-height:25px;}
 a {color:#333333;text-decoration:none; }
@@ -6,7 +7,7 @@ a:hover {color:#00cc99; text-decoration:underline;}
 p{margin:0;padding:0;}
 img{outline:none; border:none;}
 
-/*Ê×Ò³*/
+/*é¦–é¡µ*/
 .navbox{width:100%; 
 height:80px;
 overflow:hidden; 
@@ -108,10 +109,10 @@ z-index:9999;}
 
 
 
-/*Ê×Ò³*/
+/*é¦–é¡µ*/
 
 
-/*Á÷³Ì*/
+/*æµç¨‹*/
 .main{width:1200px;margin:0 auto 0 auto; }
 .mainauto{width:1200px; float:left;  background:#fff;height:auto !important; min-height:500px; _height:500px;}
 
@@ -133,10 +134,10 @@ z-index:9999;}
 
 
 
-/*Ô¤Ô¼*/
+/*é¢„çº¦*/
 .main2{width:960px; float:left; height:auto !important; min-height:50px;  _height:50px; background:#fff; }
 
-/*¼Ó¹¤*/
+/*åŠ å·¥*/
 .jiagong{width:1200px; height:33px; background:#e7e7e7; float:left; margin:30px 0 0 10; display:inline; line-height:33px; font-weight:bold;}
 .jgtb{width:1200px; float:left; text-align:center;}
 .jgbg{width:360px;height:33px; float:left; line-height:33px; font-weight:bold; color:#ffffff; text-indent:80px;}
@@ -145,7 +146,7 @@ z-index:9999;}
 .jgsb{width:50px; height:23px; float:left; margin:5px 0 0 10px; display:inline;}
 
 
-/*ÎÊ´ğ*/
+/*é—®ç­”*/
 .news5{width:1200px; height:auto !important; min-height:180px;  _height:180px; float:left;  display:inline; }
 .news5 li{width:1200px; height:auto !important; min-height:25px;  _height:25px;  float:left; padding:10px 0 10px 0;}
 .news5 ul{float:left;}

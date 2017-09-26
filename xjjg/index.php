@@ -11,7 +11,7 @@ include('../userlogin_ip.inc');
 include('../weblogin.inc');
 weblogin($uid,43,$REMOTE_ADDR);
 
-//µ±Ç°Ê±¼ä
+//å½“å‰æ—¶é—´
 $datee=getdate();
 $y=$datee["year"];
 $m=$datee["mon"];
@@ -26,8 +26,8 @@ $se=$datee["seconds"];
 if($se<10)	$se="0".$se;
 $nowtime=$y."-".$m."-".$d." ".$ho.":".$mi.":".$se;
 
-//¹«¸æ ÖÃ¶¥
-$rs=$conn->execute("select id,title,titledate,rank,content from news where titledate<'$nowtime' and relnews1='ĞÂ½®¼à¹Ü16' and (relnews='½»Ò×Í¨Öª' or relnews='½»Ò×¹«¸æ' or relnews='Õş²ß¹«¸æ') order by titledate desc limit 1");
+//å…¬å‘Š ç½®é¡¶
+$rs=$conn->execute("select id,title,titledate,rank,content from news where titledate<'$nowtime' and relnews1='æ–°ç–†ç›‘ç®¡16' and (relnews='äº¤æ˜“é€šçŸ¥' or relnews='äº¤æ˜“å…¬å‘Š' or relnews='æ”¿ç­–å…¬å‘Š') order by titledate desc limit 1");
 $ggid=$rs->fields["id"];
 $title=$rs->fields["title"];
 $content=$rs->fields["content"];
@@ -35,17 +35,17 @@ if(strlen($content)>265)	$content=SubstrGb($content,265);
 
 $newstime=explode(" ",$rs->fields["titledate"]);
 $rank=$rs->fields["rank"];
-if($rank=="0" or $rank=="2" or $rank=="3" or $rank=="5"){	//ÍøÔ±Çø
+if($rank=="0" or $rank=="2" or $rank=="3" or $rank=="5"){	//ç½‘å‘˜åŒº
 	$gg_ontop="<a href='http://www.cottonchina.org/news/news_show.php?articleid=$ggid&newstime=$newstime[0]' target='_blank' class='a2'>$title</a>";
 	$content="<a href='http://www.cottonchina.org/news/news_show.php?articleid=$ggid&newstime=$newstime[0]' target='_blank' class='a2'>".$content."</a>";	
 }
-if($rank=="1"){	//¹«¿ªÇø
+if($rank=="1"){	//å…¬å¼€åŒº
 	$gg_ontop="<a href='http://www.cottonchina.org/news/pubzmb.php?articleid=$ggid&newstime=$newstime[0]' target='_blank'>$title</a>";
 	$content="<a href='http://www.cottonchina.org/news/pubzmb.php?articleid=$ggid&newstime=$newstime[0]' target='_blank' class='a2'>".$content."</a>";
 }
 
 /*
-$rs=$conn->execute("select id,title,titledate,date_format(titledate,'%m/%d') as showtime,rank,relnews,content from news where id<>'$ggid' and titledate<'$nowtime' and relnews1='ĞÂ½®¼à¹Ü16' and (relnews='½»Ò×Í¨Öª' or relnews='½»Ò×¹«¸æ' or relnews='Õş²ß¹«¸æ') order by titledate desc limit 8");
+$rs=$conn->execute("select id,title,titledate,date_format(titledate,'%m/%d') as showtime,rank,relnews,content from news where id<>'$ggid' and titledate<'$nowtime' and relnews1='æ–°ç–†ç›‘ç®¡16' and (relnews='äº¤æ˜“é€šçŸ¥' or relnews='äº¤æ˜“å…¬å‘Š' or relnews='æ”¿ç­–å…¬å‘Š') order by titledate desc limit 8");
 $i=1;
 while($i<=8){
 	$id=$rs->fields["id"];
@@ -54,30 +54,30 @@ while($i<=8){
 	$newstime=explode(" ",$rs->fields["titledate"]);
 	$showtime=$rs->fields["showtime"];
 	$rank=$rs->fields["rank"];
-	if($rank=="0" or $rank=="2" or $rank=="3" or $rank=="5")	//ÍøÔ±Çø
+	if($rank=="0" or $rank=="2" or $rank=="3" or $rank=="5")	//ç½‘å‘˜åŒº
 		$gg.="<li><a href='http://www.cottonchina.org/news/news_show.php?articleid=$id&newstime=$newstime[0]' target='_blank' class='a2'>$title</a><span>$showtime</span></li>";
-	if($rank=="1")	//¹«¿ªÇø
+	if($rank=="1")	//å…¬å¼€åŒº
 		$gg.="<li><a href='http://www.cottonchina.org/news/pubzmb.php?articleid=$id&newstime=$newstime[0]' target='_blank' class='a1'>$title</a><span>$showtime</span></li>";
 	$rs->movenext();
 	$i++;
 }
 */
-//Õş²ß
-/* Ô­À´µÄµÚÒ»ÌõÈ¡Ïû
-$rs=$conn->execute("select id,title,content,rank,titledate from news where relnews1='ĞÂ½®¼à¹Ü15' and relnews='Õş²ß½â¶Á' order by titledate desc limit 1");
+//æ”¿ç­–
+/* åŸæ¥çš„ç¬¬ä¸€æ¡å–æ¶ˆ
+$rs=$conn->execute("select id,title,content,rank,titledate from news where relnews1='æ–°ç–†ç›‘ç®¡15' and relnews='æ”¿ç­–è§£è¯»' order by titledate desc limit 1");
 $zcid=$title=$rs->fields["id"];
 $title=$rs->fields["title"];
 $ontopcontent=$rs->fields["content"];
 $newstime=explode(" ",$rs->fields["titledate"]);
 $rank=$rs->fields["rank"];
-if($rank=='0' or $rank=='2' or $rank=='3' or $rank=='5')	//ÍøÔ±Çø
+if($rank=='0' or $rank=='2' or $rank=='3' or $rank=='5')	//ç½‘å‘˜åŒº
 	$zc_top="<a href='http://www.cottonchina.org/news/news_show.php?articleid=$zcid&newstime=$newstime[0]' target='_blank'>$title</a>";
-if($rank=='1')	//¹«¿ªÇø
+if($rank=='1')	//å…¬å¼€åŒº
 	$zc_top="<a href='http://www.cottonchina.org/news/pubzmb.php?articleid=$zcid&newstime=$newstime[0]' target='_blank'>$title</a>";
 */
 
 /*
-$rs=$conn->execute("select id,title,titledate,date_format(titledate,'%m/%d') as showtime,rank from news where titledate<'$nowtime' and relnews1='ĞÂ½®¼à¹Ü16' and relnews='Õş²ß½â¶Á' order by titledate desc limit 8");
+$rs=$conn->execute("select id,title,titledate,date_format(titledate,'%m/%d') as showtime,rank from news where titledate<'$nowtime' and relnews1='æ–°ç–†ç›‘ç®¡16' and relnews='æ”¿ç­–è§£è¯»' order by titledate desc limit 8");
 if(!$rs->EOF){
 for($i=0;$i<8;$i++){
 	$id=$rs->fields["id"];
@@ -85,16 +85,16 @@ for($i=0;$i<8;$i++){
 	$newstime=explode(" ",$rs->fields["titledate"]);
 	$showtime=$rs->fields["showtime"];
 	$rank=$rs->fields["rank"];
-	if($rank=="0" or $rank=="2" or $rank=="3" or $rank=="5")	//ÍøÔ±Çø
+	if($rank=="0" or $rank=="2" or $rank=="3" or $rank=="5")	//ç½‘å‘˜åŒº
 		$zc.="<li><a href='http://www.cottonchina.org/news/news_show.php?articleid=$id&newstime=$newstime[0]' target='_blank' class='a2'>$title</a><span>$showtime</span></li>";
-	if($rank=="1")	//¹«¿ªÇø
+	if($rank=="1")	//å…¬å¼€åŒº
 		$zc.="<li><a href='http://www.cottonchina.org/news/pubzmb.php?articleid=$id&newstime=$newstime[0]' target='_blank'>$title</a><span>$showtime</span></li>";
 	$rs->movenext();
 }
 }
 
-//ĞÅÏ¢·¢²¼
-$rs=$conn->execute("select id,title,titledate,date_format(titledate,'%m/%d') as showtime,rank from news where titledate<'$nowtime' and relnews='Ä¿±ê¼Û¸ñ' order by titledate desc limit 12");
+//ä¿¡æ¯å‘å¸ƒ
+$rs=$conn->execute("select id,title,titledate,date_format(titledate,'%m/%d') as showtime,rank from news where titledate<'$nowtime' and relnews='ç›®æ ‡ä»·æ ¼' order by titledate desc limit 12");
 if(!$rs->EOF){
 for($i=0;$i<12;$i++){
 	$id=$rs->fields["id"];
@@ -104,14 +104,14 @@ for($i=0;$i<12;$i++){
 	$newstime=explode(" ",$rs->fields["titledate"]);
 	$showtime=$rs->fields["showtime"];
 	$rank=$rs->fields["rank"];
-	if($rank=="0" or $rank=="2" or $rank=="3" or $rank=="5")	//ÍøÔ±Çø
+	if($rank=="0" or $rank=="2" or $rank=="3" or $rank=="5")	//ç½‘å‘˜åŒº
 		$xxfb.="<li><a href='http://www.cottonchina.org/news/news_show.php?articleid=$id&newstime=$newstime[0]' target='_blank' class='a1'>$title</a><span>$showtime</span></li>";
 	if($rank=="1")
 		$xxfb.="<li><a href='http://www.cottonchina.org/news/pubzmb.php?articleid=$id&newstime=$newstime[0]' target='_blank' class='a1'>$title</a><span>$showtime</span></li>";
 	$rs->movenext();
 }}
 */
-//ĞÂ½®¼à¹Ü²Ö¿âÈÕ×î´óÔ¤Ô¼Á¿Í³¼Æ
+//æ–°ç–†ç›‘ç®¡ä»“åº“æ—¥æœ€å¤§é¢„çº¦é‡ç»Ÿè®¡
 $rs=$conn->execute("select sum(yyl) as yyl_add from cncexj_yuyue where year='2015'");
 $yyl_add=$rs->fields["yyl_add"];
 
@@ -127,11 +127,11 @@ for($i=1;$i<=$rnum;$i++){
 $yuyue.="</table></DIV><DIV id='demo2'></DIV>";
 
 /*
-//×Ê¸ñÈÏ¶¨¼Ó¹¤ÆóÒµ-µØÇøÁĞ±í
+//èµ„æ ¼è®¤å®šåŠ å·¥ä¼ä¸š-åœ°åŒºåˆ—è¡¨
 $sql="select distinct area from cncexj_jiagong where id<>'' order by area asc";
 $rs=$conn->Execute($sql);
 $jiagong_area = "<select name='ser_area' style='HEIGHT: 20px; WIDTH: 80px'>";
-$jiagong_area.= "<option value='' seleted>£­µØÇø£­</option>";
+$jiagong_area.= "<option value='' seleted>ï¼åœ°åŒºï¼</option>";
 if($rs->EOF)
 	$jiagong_area.= "</select>";
 else{
@@ -143,7 +143,7 @@ else{
 	$jiagong_area.="</select>";
 }
 */
-//2015ĞÂ½®ÃŞ»¨×¨Òµ²Ö´¢½ø¶È±í
+//2015æ–°ç–†æ£‰èŠ±ä¸“ä¸šä»“å‚¨è¿›åº¦è¡¨
 $rs=$conn->execute("select bjdate,jg,jy,rk,zk from cncexj_ccjd where year='2015' order by bjdate desc limit 1");
 $id=$rs->fields["id"];
 $ccjd_bjdate=$rs->fields["bjdate"];

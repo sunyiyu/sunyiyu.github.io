@@ -1,3 +1,4 @@
+@charset "utf-8";
 body{margin:0;padding:0; }
 ul{list-style:none; margin:0;padding:0; font-size:14px;}
 li{line-height:25px;}
@@ -37,9 +38,9 @@ p{margin:0;padding:0;}
 
 .info{width:925px;height:210px; float:left; margin:0 0 0 18px; display:inline;  border:1px solid #4569bd;  position:relative;}
 
-.infotemp{width:900px;height:205px; float:left; margin:0 0 0 18px; display:inline;    font-size:16px; line-height:25px; background:#cbd8fa; padding:10px 10px 0 10px;font-family:"¿¬Ìå";  overflow:hidden;}
+.infotemp{width:900px;height:205px; float:left; margin:0 0 0 18px; display:inline;    font-size:16px; line-height:25px; background:#cbd8fa; padding:10px 10px 0 10px;font-family:"æ¥·ä½“";  overflow:hidden;}
 
-.info_l{width:545px; height:180px; float:left;  position:absolute; left:0px; top:10px; font-size:15pt; line-height:30px;  color:#000; padding:10px 10px 0 10px;font-family:"¿¬Ìå";  overflow:hidden;}
+.info_l{width:545px; height:180px; float:left;  position:absolute; left:0px; top:10px; font-size:15pt; line-height:30px;  color:#000; padding:10px 10px 0 10px;font-family:"æ¥·ä½“";  overflow:hidden;}
 .info_r{width:330px; height:200px; float:right; background:url(../images/xtbg.jpg) no-repeat; margin:5px 5px 0 0; }
 .info_scoll{ position:absolute;}
 
@@ -58,11 +59,11 @@ p{margin:0;padding:0;}
 	margin-top:10px;
 	color:#2a7cbe;
 	font-weight:bold;
-	font-family:"ºÚÌå";
+	font-family:"é»‘ä½“";
 	
 	
 }
-.tttxt{width:140;height:32px; float:left; margin:0 0 0 26px; display:inline; font-size:20px; line-height:40px; color:#2a7cbe; font-weight:bold; font-family:"ºÚÌå";}
+.tttxt{width:140;height:32px; float:left; margin:0 0 0 26px; display:inline; font-size:20px; line-height:40px; color:#2a7cbe; font-weight:bold; font-family:"é»‘ä½“";}
 
 .ttmore{width:70px; float:right;margin:14px 10px 0 0 ; font-size:14px;}
 .ttmore a{color:#34508f;}
@@ -79,7 +80,7 @@ p{margin:0;padding:0;}
 	padding-top:10px;
 	color:#2a7cbe;
 	font-weight:bold;
-	font-family:"ºÚÌå";
+	font-family:"é»‘ä½“";
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #2a7cbe;
@@ -159,7 +160,7 @@ p{margin:0;padding:0;}
 	font-size:20px;
 	line-height:40px;
 	text-align:center;
-	font-family:"ºÚÌå";
+	font-family:"é»‘ä½“";
 	font-weight:bold;
 }
 
@@ -169,7 +170,7 @@ p{margin:0;padding:0;}
 .bigbtn2{width:145px; height:33px; float:left; margin:8px 0 0 8px;display:inline; background:url(../images/btn3.png) no-repeat; line-height:33px; text-align:center; font-size:14px; font-weight:bold; }
 
 .bigbtn3{width:298px; height:40px; float:left; margin:8px 0 0 8px;display:inline; background:url(../images/btn4.jpg) no-repeat; line-height:40px; text-align:center; font-size:14px; font-weight:bold; }
-.bigbtns a {color:#1458f1; text-decoration:none; font-family:"ºÚÌå";font-size:15px;}
+.bigbtns a {color:#1458f1; text-decoration:none; font-family:"é»‘ä½“";font-size:15px;}
 .bigbtns a:hover {color:#6084d5; text-decoration:underline;}
 
 .info2{width:300px; height:auto !important; min-height:40px; _height:40px; float:left; margin:0 0 0 15px; display:inline; padding:0 10px 0 10px; }
@@ -254,9 +255,9 @@ p{margin:0;padding:0;}
 .yuyueliang a:hover {color:#6084d5; text-decoration:underline; font-size:14px; font-weight:bold; }
 
 
-/*Ö÷µ¼º½*/
+/*ä¸»å¯¼èˆª*/
 .hide {DISPLAY: none}
-#mainmenu_top,#mainmenu_bottom{font-family:"Î¢ÈíÑÅºÚ"; font-size:16px;}
+#mainmenu_top,#mainmenu_bottom{font-family:"å¾®è½¯é›…é»‘"; font-size:16px;}
 #mainmenu_top UL LI .menuhover {width: 190px;COLOR: #fff;border:2px solid #FFF;}
 #mainmenu_top UL LI .menuhover {background-color: #2a7cbe;}
 #mainmenu_top UL LI A {PADDING-TOP: 8px;}
@@ -281,7 +282,7 @@ p{margin:0;padding:0;}
 #mainmenu_bottom UL LI A {COLOR: #fff; font-size:14px;}
 
 
-/*¼Û¸ñÖ¸Êý*/
+/*ä»·æ ¼æŒ‡æ•°*/
 .ccindex {HEIGHT: 250px; FLOAT: left; MARGIN: 4px 0px 0px 10px; DISPLAY: inline; WIDTH: 235px}
 .cctitle {BORDER-TOP: #539b75 1px solid; HEIGHT: 30px; BORDER-LEFT: #539b75 1px solid; WIDTH: 235px}
 .ccbg1 {HEIGHT: 30px; BORDER-RIGHT: #539b75 1px solid; BACKGROUND: url(../images/pink_bg1.gif); FLOAT: left; WIDTH:46px}
