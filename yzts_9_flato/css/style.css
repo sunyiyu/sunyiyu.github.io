@@ -795,12 +795,12 @@ span.hoverBox a{
 }
 
 span.hoverBox .smallIcon{
-	width: 94px;
+	width: 45px;
 	margin: 0px auto;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -47px;
+	margin-left: -18px;
 	margin-top: -21px;
 }
 
@@ -832,12 +832,12 @@ ul.portfolioContainer li:hover span.hoverBox .zoom{
 span.hoverBox .linKed{
 	visibility:hidden;
 	width:42px;
-	height:42px;
-	background:#313131;
+	height: 42px;
+	border-radius: 5px;
+	background:#ff675f;
 	color:#fff;
 	position: relative;
-	right:-150%;
-	/*top:40%;*/
+	right:150%;
 	text-align:center;
 	line-height:52px;
 	display: block;
@@ -846,6 +846,14 @@ span.hoverBox .linKed{
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
+span.hoverBox .linKed i{
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	background: url('icon/icon.png') no-repeat -15px -45px;
+}
+
+
 ul.portfolioContainer li:hover span.hoverBox .linKed{
 	visibility:visible;
 	right:0%;
@@ -998,12 +1006,21 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 
 .contactDetails i{
-	padding-right:15px;
+	padding:0 36px 10px 0;
+	background: url("icon/icon.png") no-repeat -17px -11px;
 }
-
-
-
-
+i.fa-map-marker{
+	background-position: -157px -11px;
+}
+i.fa-mobile{
+	background-position: -54px -11px;
+}
+i.fa-envelope-o{
+	background-position: -121px -11px;
+}
+i.fa-git{
+	background-position: -68px -46px;
+}
 
 
 /*----------------------------------------------------
