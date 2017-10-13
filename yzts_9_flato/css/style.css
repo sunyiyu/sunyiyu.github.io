@@ -426,7 +426,7 @@ header{
 ------------------------------------------------------*/
 
 .aboutme{
-	background:#00bdbd;
+	background:#1b1f2b;
 	color:#fff;
 	position:relative;
 }
@@ -470,7 +470,7 @@ header{
 }
 
 .technical{
-	background:#eeeeee;
+	background:#ffffff;
 	color:#474d5d;
 }
 .technical .container{
@@ -561,7 +561,7 @@ header{
  8.	Work Experience Style
 ------------------------------------------------------*/
 .exprience{
-	background:#fff;
+	background:#eeeeee;
 }
 .exprience .container{
 	padding-top:85px ;
@@ -613,8 +613,8 @@ header{
 }
 .exCon{
 	width:auto;
-	background:#f3f3f3;
-	border-bottom:solid 4px #eeeeee;
+	background:#ffffff;
+	/*border-bottom:solid 4px #eeeeee;*/
 	padding:22px 47px 6px 47px;
 	margin-left:15px;
 	text-align:left;
@@ -641,7 +641,7 @@ header{
  9.	Education Style
 ------------------------------------------------------*/
 .education{
-	background:#eeeeee;
+	background:#ffffff;
 }
 .education .container{
 	padding-top:85px ;
@@ -669,7 +669,7 @@ header{
 }
 .education .exCon{
 	background:#fafafa;
-	border-bottom:solid 4px #e8e7e7;
+	/*border-bottom:solid 4px #e8e7e7;*/
 }
 
 .education .workDetails .rightArea{
@@ -683,7 +683,7 @@ header{
  10. Protfolio Style
 ------------------------------------------------------*/
 .protfolio{
-	background:#2bb3dd;
+	background:#eeeeee;
 }
 .protfolio .container{
 	padding-top:85px ;
@@ -696,6 +696,9 @@ header{
 
 .protfolio h4{
 	font-weight:700;
+}
+.protfolio h2{
+	color: #ff675f;
 }
 
 
@@ -719,27 +722,28 @@ header{
 	padding:16px 18px;
 	font-size:13px;
 	line-height:15px;
-	color:#ffffff;
+	color: #ff675f;
 	text-transform:uppercase;
 	display:block;
 	text-decoration:none;
-	border:solid 1px #95d9ee;
+	border:solid 1px #ff675f;
+	border-radius: 5px;
 	
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
 
 .portfolioFilter ul li a:hover{
-	border:solid 1px #15596e;
-	color:#15596e;
+	border:solid 1px #ff5550;
+	color:#cccccc;
 	
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
 
 .portfolioFilter ul li a.current{
-	background:#15596e;
-	border:solid 1px #15596e;
+	background:#ff675f;
+	border:solid 1px #ff675f;
 	color:#fff;
 }
 
@@ -1011,19 +1015,29 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 .contactDetails i{
 	padding:0 36px 10px 0;
-	background: url("icon/icon.png") no-repeat -15px -11px;
+	background: url("icon/boke.svg") no-repeat;
+	-webkit-background-size: 24px;
+	background-size: 24px;
 }
-i.fa-map-marker{
-	background-position: -157px -11px;
+.contactDetails i.fa-map-marker{
+	background: url("icon/logcotion.svg") no-repeat;
+	-webkit-background-size: 24px;
+	background-size: 24px;
 }
 i.fa-mobile{
-	background-position: -54px -11px;
+	background: url("icon/iphone.svg") no-repeat;
+	-webkit-background-size: 24px;
+	background-size: 24px;
 }
 i.fa-envelope-o{
-	background-position: -121px -11px;
+	background: url("icon/email.svg") no-repeat;
+	-webkit-background-size: 24px;
+	background-size: 24px;
 }
 i.fa-git{
-	background-position: -68px -46px;
+	background: url("icon/Git.svg") no-repeat;
+	-webkit-background-size: 24px;
+	background-size: 24px;
 }
 
 
